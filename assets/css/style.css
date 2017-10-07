@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    width: 100%;
+}
+
+body {
+    background-image: url("../images/eight_horns.png");
+}
+
+header {
+    background: #ffffff; /* white */
+    border-style: solid;
+    border-bottom-color: #cccccc; /* lightest grey */
+    border-bottom-width: 2px;
+}
+
+footer {
+    background: #666666; /* dark grey */
+    border-style: solid;
+    border-top-color: #4aaaa5;
+    border-top-width: 6px;
+}
+
+section {
+    width: 640px;
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    background: #ffffff;
+    border-style: solid;
+    border-color: #dddddd; /* light grey */
+    border-width: 1px;
+}
+
+/* Connect with me links and navigation bar */
+nav ul {
+    width: 210px;
+    height: 18px;
+    margin: 15px auto;
+}
+
+nav li {
+    float: left;
+}
+
+.nav-bar-formatting {
+    background: #ffffff; /* white */
+    border-style: solid;
+    border-bottom-color: #cccccc; /* lightest grey */
+    border-bottom-width: 2px;
+}
+
+.nav-bar-formatting ul {
+    width: 240px;
+}
+
+.nav-bar-formatting li {
+    border-right: solid 2px #dddddd;
+}
+
+.nav-bar-formatting li:last-child {
+    border: 0px;
+}
+
+nav a:hover {
+    color: #4aaaa5;
+    transition: 0.4s;
+}
+
+.line {
+    width: 95%;
+    height: 2px;
+    margin: 0 auto;
+    background: #dddddd;
+}
+
+p, a {
+    font-family: 'Arial','Helvetica Neue',Helvetica,sans-serif;
+    font-size: 18px;
+    color: #777777; /* medium grey */
+    padding: 10px;
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-family: 'Georgia',Times,Times New Roman,serif;
+    font-weight: bold;
+    color: #4aaaa5;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.invert-colors {
+    background: #4aaaa5;
+    color: #ffffff;
+}
+
+h1:hover, h2:hover {
+    background: #4aaaa5; /* teal */
+    color: #ffffff;
+    transition: 0.4s;
+}
+
+.invert-colors:hover {
+    background: #ffffff;
+    color: #4aaaa5;
+    transition: 0.4s;
+}
+
+.footer-text {
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: #eeeeee;    
+}
+
+/* Image container for left floating images */
+.image-container {
+    position: relative;
+    float: left;
+    width: 240px;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+.image-container img:hover {
+    opacity: 0.7;
+    transition: 0.4s;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%
+}
+
+.image-container h2 {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    font-weight: normal;
+}
+
+/* Formatting for boxes on the contact me page */
+.contact-box {
+    width: 96%;
+    height: 20px;
+    margin-left: 10px;
+    color: #777777;
+}
+
+.message-box {
+    height: 200px;
+    border-color: #dddddd;
+}
+
+.submit-box {
+    height: 30px;
+    width: 60px;
+    margin-top: 15px;
+    background: #4aaaa5;
+    color: #ffffff;
+    border: 0;
+    border-radius: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+
+
+
+
+
+
