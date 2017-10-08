@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    /*outline: 1px solid red;*/
 }
 
 .row::after {
@@ -11,6 +12,12 @@
 [class*="col-"] {
     float: left;
     width: 100%;
+}
+
+.section-wrapper {
+    width: 90%;
+    margin: 3%;
+    overflow-x: hidden;
 }
 
 body {
@@ -33,9 +40,7 @@ footer {
 }
 
 section {
-    width: 640px;
-    max-width: 600px;
-    margin: 20px;
+    margin: 5px auto;
     padding: 20px;
     background: #ffffff;
     border-style: solid;
@@ -98,7 +103,6 @@ h1, h2 {
     font-weight: bold;
     color: #4aaaa5;
     padding: 10px;
-    /*text-align: center;*/
 }
 
 h1 {
